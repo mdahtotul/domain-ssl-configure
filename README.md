@@ -11,8 +11,6 @@ sudo nano /etc/nginx/sites-available/default
 ```
 Add the following to the location part of the server block
 ```
-    server_name yourdomain.com www.yourdomain.com;
-
     location / {
         proxy_pass http://localhost:5000; #whatever port your app runs on
         proxy_http_version 1.1;
